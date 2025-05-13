@@ -3,15 +3,20 @@
 <head>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/src/output.css' %}">
-    <title>{% block title %}Designs{% endblock %}</title>
+    <title>{% block title %}Mako Tech{% endblock %}</title>
     {% block extra_css %} {% endblock %}
 </head>
 
 <body>
+    <div id="nav">
     {% block navbar %}
     {% include "includes/navbar.html" %}
     {% endblock %}
+    </div>
 
+    <div id="content">
     {% block content %} {% endblock %}
+    </div>
+    {% block scripts %}{% endblock %}
 </body>
 </html>
