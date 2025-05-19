@@ -1,9 +1,11 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
 {% block content %}
-    <div class="flex items-center justify-center min-h-screen">
-        <h1 class="text-2xl font-bold">Design Index template</h1>
 
-        {% include 'designs/partials/design-list.html' %}
-    </div>
+<div>
+    <h1 class="text-4xl text-success mb-4">Design List</h1>
+
+    {% include 'designs/partials/design-list.html' %}
+</div>
+
 {% endblock %}
